@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { numbers } from "./numbers-calculator";
 
 export const Calculator: React.FC = () => {
   const [input, setInput] = useState<string>("");
@@ -6,25 +7,6 @@ export const Calculator: React.FC = () => {
   const handleButtonClick = (value: string) => {
     setInput((prevInput) => prevInput + value);
   };
-
-  const numbers = [
-    "7",
-    "8",
-    "9",
-    "/",
-    "4",
-    "5",
-    "6",
-    "*",
-    "1",
-    "2",
-    "3",
-    "-",
-    "0",
-    ".",
-    "=",
-    "+",
-  ];
 
   const handleCalculate = () => {
     try {
